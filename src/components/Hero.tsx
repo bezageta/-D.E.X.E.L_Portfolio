@@ -69,7 +69,7 @@ const Hero = () => {
           <div className="lg:col-span-5 relative hidden lg:block">
             <div className="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700 ease-out">
               <img
-                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=2000&auto=format&fit=crop"
                 alt="Digital Innovation"
                 className="w-full h-full object-cover"
               />

@@ -49,13 +49,12 @@ const Header = ({ onNavigate }: { onNavigate: (page: string) => void }) => {
         >
           <div className="flex items-center gap-8">
             {/* Logo */}
-            <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('#home')}>
-              <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center text-white font-bold font-display text-lg">
-                D
-              </div>
-              <span className={`font-display font-bold text-xl tracking-tight transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0 md:opacity-100'}`}>
-                Dexel
-              </span>
+            <div className="cursor-pointer" onClick={() => scrollToSection('#home')}>
+              <img
+                src="/src/assets/logo.jpeg"
+                alt="Dexel Logo"
+                className="w-16 h-16 rounded-lg object-cover"
+              />
             </div>
 
             {/* Desktop Navigation */}

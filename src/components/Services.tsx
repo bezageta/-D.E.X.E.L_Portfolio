@@ -5,7 +5,7 @@ const Services = () => {
       description: 'Enterprise-grade solutions tailored to your specific business logic and requirements.',
       icon: '💻',
       className: 'md:col-span-2 md:row-span-2 relative overflow-hidden',
-      image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2000&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=2000&auto=format&fit=crop',
       dark: true
     },
     {

@@ -5,11 +5,12 @@ const Contact = ({ onBack }: { onBack: () => void }) => {
         <div className="min-h-screen bg-white">
             {/* Navigation Bar Placeholder (or simplified header) */}
             <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-8 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-gray-100">
-                <div className="flex items-center gap-2 cursor-pointer" onClick={onBack}>
-                    <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center text-white font-bold font-display text-lg">
-                        D
-                    </div>
-                    <span className="font-display font-bold text-xl tracking-tight">Dexel</span>
+                <div className="flex items-center gap-3 cursor-pointer" onClick={onBack}>
+                    <img
+                        src="/src/assets/logo.jpeg"
+                        alt="Dexel Logo"
+                        className="w-16 h-16 rounded-lg object-cover"
+                    />
                 </div>
                 <button
                     onClick={onBack}
@@ -22,7 +23,6 @@ const Contact = ({ onBack }: { onBack: () => void }) => {
             <div className="pt-32 pb-20 container-premium">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
-                        <h1 className="section-title mb-4">Contact Us</h1>
                         <p className="text-2xl text-gray-500 font-light">
                             Ready to start your next project? Get in touch with us today.
                         </p>

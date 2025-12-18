@@ -74,7 +74,7 @@ const About = ({ onNavigate }: { onNavigate: (page: string) => void }) => {
             {/* Main Image */}
             <div className="relative z-10 w-full aspect-[4/5] md:aspect-auto md:h-[700px] rounded-[2rem] overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=2000&auto=format&fit=crop"
                 alt="Team Collaboration"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 ease-out"
               />

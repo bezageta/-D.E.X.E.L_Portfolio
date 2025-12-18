@@ -3,32 +3,32 @@ const Team = ({ onBack }: { onBack: () => void }) => {
         {
             name: 'Sarah Johnson',
             role: 'Chief Executive Officer',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop'
+            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=2000&auto=format&fit=crop'
         },
         {
             name: 'Michael Chen',
             role: 'Chief Technology Officer',
-            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop'
+            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=2000&auto=format&fit=crop'
         },
         {
             name: 'Emily Davis',
             role: 'Head of Design',
-            image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop'
+            image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=2000&auto=format&fit=crop'
         },
         {
             name: 'James Wilson',
             role: 'Lead Developer',
-            image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1000&auto=format&fit=crop'
+            image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=2000&auto=format&fit=crop'
         },
         {
             name: 'Sofia Rodriguez',
             role: 'Product Manager',
-            image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop'
+            image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=2000&auto=format&fit=crop'
         },
         {
             name: 'David Kim',
             role: 'Marketing Director',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop'
+            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=2000&auto=format&fit=crop'
         }
     ];
 
@@ -36,11 +36,12 @@ const Team = ({ onBack }: { onBack: () => void }) => {
         <div className="min-h-screen bg-white">
             {/* Navigation Bar */}
             <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-8 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-gray-100">
-                <div className="flex items-center gap-2 cursor-pointer" onClick={onBack}>
-                    <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center text-white font-bold font-display text-lg">
-                        D
-                    </div>
-                    <span className="font-display font-bold text-xl tracking-tight">Dexel</span>
+                <div className="flex items-center gap-3 cursor-pointer" onClick={onBack}>
+                    <img
+                        src="/src/assets/logo.jpeg"
+                        alt="Dexel Logo"
+                        className="w-16 h-16 rounded-lg object-cover"
+                    />
                 </div>
                 <button
                     onClick={onBack}
@@ -52,7 +53,6 @@ const Team = ({ onBack }: { onBack: () => void }) => {
 
             <div className="pt-32 pb-20 container-premium">
                 <div className="text-center mb-16">
-                    <h1 className="section-title mb-4">Our Team</h1>
                     <p className="text-2xl text-gray-500 font-light">
                         Meet the experts behind our success
                     </p>
